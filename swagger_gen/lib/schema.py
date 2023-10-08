@@ -253,7 +253,8 @@ class SwaggerDefinition:
                 [
                     self._create_parameter_definition(
                         name=arg,
-                        parameter_type=ParameterType.QUERY)
+                        parameter_type=ParameterType.QUERY,
+                        required=False)
                     for arg in metadata.query_params
                 ])
             parameters.extend(query_parameters)
